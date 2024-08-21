@@ -1,8 +1,8 @@
 #!/bin/bash
 whoami
-nohup /etc/init.d/logmein-hamachi start
 ping -c 4 hamachi-data-center.logmein-gateway.com
-sleep 10
+#nohup /etc/init.d/logmein-hamachi start
+nohup /opt/logmein-hamachi/bin/hamachid
 ps aux
 mkdir -vp /run/sshd
 /usr/sbin/sshd -D
