@@ -13,7 +13,7 @@ RUN apt-get -y update
 RUN apt-get -y install wget openssh-server net-tools iproute2 iputils-ping
 RUN wget https://vpn.net/installers/logmein-hamachi_2.1.0.203-1_amd64.deb
 COPY ./gai.conf /
-RUN cat /gai.conf >> /etc/gai.conf
+RUN cat /gai.conf > /etc/gai.conf
 COPY ./hamachi.sh /
 RUN chmod +x /hamachi.sh
 RUN /bin/bash /hamachi.sh
