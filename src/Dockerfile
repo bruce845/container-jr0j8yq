@@ -20,7 +20,7 @@ RUN /bin/bash /hamachi.sh
 RUN sed 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config > /tmp/sshd_config
 RUN cat /tmp/sshd_config > /etc/ssh/sshd_config
 RUN echo 'root:root' | chpasswd
-RUN echo "NOCACHE Entrypoint"
+RUN echo "NOCACHE"
 COPY ./entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
