@@ -1,3 +1,15 @@
+# v0.0.12 (Wed Aug 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Create hamachi.sh ([@bruce845](https://github.com/bruce845))
+
+#### Authors: 1
+
+- [@bruce845](https://github.com/bruce845)
+
+---
+
 # v0.0.11 (Wed Aug 21 2024)
 
 #### ⚠️ Pushed to `main`
