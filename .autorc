@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "bruce845",
+  "repo": "container-jr0j8yq",
+  "name": "bruce845",
+  "email": "bruce845@hotmail.com",
+}
