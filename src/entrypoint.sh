@@ -1,7 +1,7 @@
 #!/bin/bash
 whoami
 /etc/init.d/logmein-hamachi start
-/opt/logmein-hamachi/bin/hamachid
+nohup /opt/logmein-hamachi/bin/hamachid
 ps aux
 echo "Executando Hamachi Login"
 hamachi login
