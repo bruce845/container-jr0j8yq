@@ -1,6 +1,8 @@
 #!/bin/bash
+whoami
 /etc/init.d/logmein-hamachi start
 sleep 5
+ps aux
 hamachi login
 hamachi set-nick brucon01
 hamachi join vilaclara_bruce bruce_vilaclara
