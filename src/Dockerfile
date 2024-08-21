@@ -15,6 +15,7 @@ RUN wget https://vpn.net/installers/logmein-hamachi_2.1.0.203-1_amd64.deb
 RUN dpkg -i logmein-hamachi_2.1.0.203-1_amd64.deb
 RUN sed 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config > /tmp/sshd_config
 RUN cat /tmp/sshd_config > /etc/ssh/sshd_config
+RUN echo 'root:root' | chpasswd
 COPY ./entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 
