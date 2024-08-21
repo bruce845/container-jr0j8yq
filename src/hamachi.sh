@@ -5,4 +5,5 @@ ping -c 4 hamachi-data-center.logmein-gateway.com
 nohup /opt/logmein-hamachi/bin/hamachid
 hamachi login
 hamachi set-nick brucon01
+sleep 5
 hamachi join vilaclara_bruce bruce_vilaclara
