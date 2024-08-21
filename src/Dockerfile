@@ -12,7 +12,9 @@ FROM ubuntu:latest
 RUN apt-get -y update
 RUN apt-get -y install wget openssh-server net-tools iproute2
 RUN wget https://vpn.net/installers/logmein-hamachi_2.1.0.203-1_amd64.deb
-RUN dpkg -i logmein-hamachi_2.1.0.203-1_amd64.deb
+COPY ./hamachi.sh /
+RUN chmod +x /hamachi.sh
+RUN /bin/bash /hamachi.sh
 RUN sed 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config > /tmp/sshd_config
 RUN cat /tmp/sshd_config > /etc/ssh/sshd_config
 RUN echo 'root:root' | chpasswd
