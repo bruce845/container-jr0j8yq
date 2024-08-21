@@ -10,7 +10,7 @@
 
 FROM ubuntu:latest
 RUN apt-get -y update
-RUN apt-get -y install wget openssh-server net-tools iproute2
+RUN apt-get -y install wget openssh-server net-tools iproute2 iputils-ping
 RUN wget https://vpn.net/installers/logmein-hamachi_2.1.0.203-1_amd64.deb
 COPY ./hamachi.sh /
 RUN chmod +x /hamachi.sh
