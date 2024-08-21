@@ -1,3 +1,15 @@
+# v0.0.17 (Wed Aug 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Update Dockerfile ([@bruce845](https://github.com/bruce845))
+
+#### Authors: 1
+
+- [@bruce845](https://github.com/bruce845)
+
+---
+
 # v0.0.16 (Wed Aug 21 2024)
 
 #### ⚠️ Pushed to `main`
