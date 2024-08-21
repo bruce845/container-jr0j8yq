@@ -10,7 +10,7 @@
 
 FROM ubuntu:latest
 RUN apt-get update
-RUN apt-get install wget openssh-server net-tools iproute
+RUN apt-get install wget openssh-server net-tools iproute2
 RUN wget https://vpn.net/installers/logmein-hamachi_2.1.0.203-1_amd64.deb
 RUN dpkg -i logmein-hamachi_2.1.0.203-1_amd64.deb
 RUN sed 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config > /tmp/sshd_config
